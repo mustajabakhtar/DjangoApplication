@@ -4,7 +4,7 @@ from .models import (Question,
                      Choice)
 
 
-class ChoiceInLine(admin.StackedInline):
+class ChoiceInLine(admin.TabularInline):
     model = Choice
     extra = 3
 
